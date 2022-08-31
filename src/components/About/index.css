@@ -1,0 +1,25 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-about-img {
+  width: 250px;
+}
+
+.desktop-about-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-about-img {
+    display: block;
+    width: 840px;
+  }
+  .mobile-about-img {
+    display: none;
+  }
+}
